@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 25" width="21" height="25">
+	<title>card</title>
+	<defs>
+		<image width="21" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAZCAYAAADe1WXtAAAAAXNSR0IArs4c6QAAAa9JREFUSEu1lTFPwlAQx+9ecZGdXb8ACcXojtLSKM6yElfCLK44E1ZllVk00CrsJlISv4Du7Ey2PfMKrymUtlBCt7737vf+d/+7FmEPD+6BCRtBdX1cAcQCIQ5LxVw3TkgstK+bdUAoeCCCkabKrShwJHRgTO4J6DQAiAGHQgMKV8kR4LXQWKC4IAQcgG4MjAAvQQfvkwIR1ePcXd1HxFapmBuJdQ/a/zDPwIHGtkDvPIOmdiF/8ncXahjfGQKr7QCkk0IZwAwhVVOU7NSFbl3HsJsXxrlQ3TA7DkAmqUoRxwCmqiJX50oN83VXoIjXFPnKhQ6McZsAj3YFI9BvScnX5unr44qDeBMG5SbYjJqSg40oMxlRV1Xzz15LRallxJ6I0SEATMP6WKj0WmrRVmmiv2tALAs1/KAtUStlM64ww42wJKcp2VgX5eJZAFEP8eBFUbKzJag/dd63vN/Emt9IboRYXz0XmKiwevJAG6yO2JcgVfVfuC4u8nsaOrq+kdweqpu3gFAOBBL0NFV+DMsuUunb8Os4ZbMHfxtxYyzJubs8P/lJBE06DLE/viTgf/EltBp1EUfEAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="card" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: #2b2f3f;
+}
+ul li {
+  padding-top: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #b7bacd;
+  transition: all;
+}
+ul li a:hover {
+  transform: scale(1.1);
+  color: #13e18c;
+}
+ul li .info::before {
+  content: url("../img/information.svg");
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+ul li .rate::before {
+  content: url("../img/card.svg");
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+ul li .buy-basket::before {
+  content: url("../img/basket.svg");
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+ul li .nav--active {
+  color: #fbfbfb;
+  border-bottom: 1px solid #fbfbfb;
+  padding-bottom: 25px;
+}
+
+.hero {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #212434;
+  padding: 50px;
+}
+.hero__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 35px;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+}
+.hero__text .text__header {
+  display: flex;
+  margin-bottom: 40px;
+}
+.hero__text .text__header--heading {
+  margin-right: 63px;
+}
+.hero__text .text__header--heading h2 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.hero__text .text__header--heading span {
+  font-size: 14px;
+  color: #fdfdfd;
+}
+.hero__text .text__header--centr {
+  font-size: 14px;
+  line-height: 22px;
+  color: #b7bacd;
+  margin-bottom: 60px;
+}
+.hero__text .text__footer {
+  display: flex;
+}
+.hero__text .text__footer div {
+  margin-right: 50px;
+}
+.hero__text .text__footer div p:first-child {
+  font-size: 12px;
+  color: #fedc3f;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.hero__text .text__footer div p:last-child {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.hero__text .text__footer button {
+  padding: 20px 33px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  background-color: #13e18c;
+  cursor: pointer;
+}
+
+.hero--active {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

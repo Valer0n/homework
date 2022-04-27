@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="23" height="23">
+	<title>basket</title>
+	<defs>
+		<image width="23" height="23" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAjJJREFUSEu1VTtsE0EQfbN25959UoMifI4Saifs2fzaQBtoo7QklHzaQAtpIS0/+5bENUT4jCKok959Ot8O2j2vs7bvfIlErlrdzrx5M/NmlnCNH10jNgrBlTqpaEoaYDQYvGjIEOgUhK7gUlfKpfM8gnPBvx79WiwnYlcD1SwAEyQpJW/urS2fZt/nhDWMGcN9DVSMiQAGmvHTngmrLqD5TyhvZWWQy7wdxdsgNGxsxudWGLzzebSj+CkID0b33VYY7E3zzAWPVHxgWBPob1PWnmUl2FH91wy+IYDzUAYblwL/dti7SZpe2eYR7TXv1LpZ4FH0+6Em/cQmJ3jn7nr9j283Zm4MmXhldFmZUAaQp4hMO2I6DsNbn8bgbRV/+Z+ab8ng/hi8o3pvGbRg6sfggTmnmuYzQOQw1xXfjkDVtE981pT1rQvmXvdN/VzNs2rpMvR74/s4dV0w/95vMPO2dRR4CY1dcyyhvCnl0iCrZEqdVBMM96d9nAjG4L6hYPGeSPwwTnnALpjxs2phfdspxxGa0LnTNhiZQzGv4W7ofM1PgHdU/zmDV8xIhzLYvIp6IhWbVVEl0HFT1l6kYvC+KOo91kSPRrXemLfxfD+zhxIMD2y7mD+GYf3DDLjffdPU1npgF1XR1z6MV50AfHXN7BY3TD6DInA/YzM8zn4G3BumARMdFQHb9JnX0nqnw5MLPrFKL4Ps20yt5hnmRa9PXjwjwWFJ7/ivUuEbelXyvv0/asUQJ27LbxwAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="basket" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
