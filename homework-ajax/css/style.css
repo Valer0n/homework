@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+#form {
+    margin: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: red;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 2px solid green;
+}
+
+#btn {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: rgb(32, 180, 18);
+    color: red;
+    cursor: pointer;
+}
