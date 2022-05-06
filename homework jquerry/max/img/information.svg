@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26" >
+	<title>tooltip</title>
+	<defs>
+		<image width="26" height="26" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAZNJREFUSEu9letRwzAQhHcrADqACoAKgAqACiAVkFQAVABUQDogVACpgFABKSFUcMwKyXNxHFuWZ3Iz/qPXd7denYgdBescMzsBsDeQ/0ty4c+oQGZ2DuANwP5ASNq+AnBN8lMDHqSJoZXUc1yRPKhAUa4vt2oOIGRSEFLmzO07lYyhoijbR5yck9Ti4jAz/Z/jeMCF5GsCPZJ8KKb8J67999kgM5Mx7jKhLyT1n4tAPrMuXqVESUVX0fJdEM3LyrOiiuKmQwD62mJJcpkW9K4oglRVctA22ILkezHIzMYAnnJ0AzAh+Vwk3c5ATjo12raQdMEIRRVlSraxLNcMco/6U7h8fSNecvXN5NS1FqTBH3eoIP49kTSTJqiZyQDelZLZPzVHsr5/JnwjbDpzSnLkJ8xsCuCmpepvkuH/epCqUnaXLRsrWAZE92qcLvLGU16HmNktgFc3rioUGk8xIpnGG/PsBEW71mH+sE7ImnRd7mqoTFuyIL1ArrLQZqL+rXL55LOkqzktWLfvPesN6pJ42/wfOu/yG9fz6dgAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="tooltip" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
