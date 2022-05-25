@@ -24,12 +24,14 @@ class Burger extends React.Component {
                 totalPrice: 1,
                 isModalOpen: false,
                 inOrder: [],
+                order: [],
             }
         });
     };
     setMessage = (err) => {
-        this.setState({ message: err ? <p className="problem">Something went wrong. Please try again</p> : <p className="success">Success! Waiting for your tasty burger</p> });
+        this.setState({ message: err ? alert('Something went wrong.Please try again') : alert('Success! Waiting for your tasty burger') });
     };
+
     componentDidMount = () => {
         axios.get('https://beetroot-burger-app.herokuapp.com/ingredients')
             .then(response => response.data)
@@ -143,6 +145,7 @@ class Burger extends React.Component {
                     totalPrice={this.state.totalPrice}
                     setMessage={this.setMessage}
                     cleanState={this.cleanState}
+                    getNew={this.componentDidMount}
                 />
             </main>
         )

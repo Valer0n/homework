@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import './Modal.css';
 import axios from 'axios';
 import Form from "../Form/Form";
+import { toHaveAccessibleDescription } from "@testing-library/jest-dom/dist/matchers";
 
 
 const customStyles = {
@@ -26,7 +27,7 @@ class CustomModal extends React.Component {
             name: '',
             number: '',
             address: '',
-            delivery: false,
+            checked: false,
             promo: 'hello',
             finalPrice: this.props.totalPrice,
         };
@@ -60,22 +61,22 @@ class CustomModal extends React.Component {
             }
         })
     }
-    changeCheckbox = () => {
+    changeCheckbox = (event) => {
         this.setState((prevState) => {
             return {
                 ...prevState,
-                [this.state.checked]: !prevState.checked,
+                checked: !prevState.checked,
             }
         })
     }
 
     postOrder = (data) => {
         const body = JSON.stringify({
-            "orderPhone": data.number,
+            "orderPhone": Number(data.number),
             "orderAddress": data.address,
             "orderName": data.name,
-            "orderFast": this.state.delivery,
-            "orderProducts": this.props.orderQuantity,
+            "orderFast": this.state.checked,
+            "orderProducts": Object.fromEntries(this.props.orderQuantity.map(e => [e.ingredient, e.quantity])),
             "orderPrice": this.state.finalPrice.toFixed(2),
         });
 
@@ -103,10 +104,11 @@ class CustomModal extends React.Component {
             name: "",
             number: "",
             address: "",
-            checked: true,
+            checked: false,
             promo: "hello",
             finalPrice: 1,
         });
+        this.props.getNew();
         // this.props.onRequestClose();
 
     }
@@ -129,7 +131,8 @@ class CustomModal extends React.Component {
                         changeCheckbox={this.changeCheckbox}
                         checkPromo={this.checkPromo}
                         postOrder={this.postOrder}
-                        onShowHideModal={this.props.onShowHideModal} />
+                        onShowHideModal={this.props.onShowHideModal}
+                        modalState={this.state} />
                 </div>
             </Modal>
         )

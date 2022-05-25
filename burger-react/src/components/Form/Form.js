@@ -49,9 +49,9 @@ export default function Form(props) {
                     }
                 })} /><br />
                 <p className="error">{errors?.address && <p>{errors?.address?.message || 'Enter your address!'}</p>}</p>
-                <input type="checkbox" name='delivery' value="delivery" onChange={props.changeCheckbox} />
-                <label htmlFor="delivery">Fast delivery</label><br />
-                <input type="text" name="promo" placeholder="Promo-code" onClick={props.checkPromo} />
+                <input type="checkbox" name='checked' value="checked" onClick={props.changeCheckbox} />
+                <label htmlFor="checked">Fast delivery</label><br />
+                <input type="text" name="promo" placeholder="Promo-code" onChange={props.checkPromo} />
                 <button className="button-order" type="submit" disabled={!isValid}>ORDER</button>
                 <button className="button-close" onClick={props.onShowHideModal}>CLOSE</button>
             </form>
