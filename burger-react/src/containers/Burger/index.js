@@ -1,6 +1,6 @@
 import React from "react";
 import { Prices, Controls, Builder } from '../../components';
-import CustomModal from "../../components/Modal/Modal";
+import CustomModal from "../Modal/Modal";
 import './Burger.css';
 import axios from "axios";
 
@@ -14,6 +14,7 @@ class Burger extends React.Component {
             products: [],
             inOrder: [],
             message: '',
+            loading: true,
         }
     }
 
@@ -41,6 +42,7 @@ class Burger extends React.Component {
                         ...prevState,
                         order: result[0].ingredients.map((ingredient) => { return { ingredient: ingredient.name, quantity: 0 } }),
                         products: result[0].ingredients,
+                        loading: false,
                     }
                 })
             })
@@ -128,7 +130,8 @@ class Burger extends React.Component {
         return (
             <main className="main">
                 <Prices
-                    ingredients={this.state.products} />
+                    ingredients={this.state.products}
+                    loading={this.state.loading} />
                 <Builder
                     totalPrice={this.state.totalPrice}
                     modalControl={this.onShowHideModal}
@@ -137,7 +140,8 @@ class Burger extends React.Component {
                 <Controls
                     onHandleIngredientQuantity={this.onHandleIngredientQuantity}
                     ingredients={this.state.products}
-                    count={this.state.order} />
+                    count={this.state.order}
+                    loading={this.state.loading} />
                 <CustomModal
                     isOpen={this.state.isModalOpen}
                     onShowHideModal={this.onShowHideModal}

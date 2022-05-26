@@ -1,4 +1,5 @@
 import React from 'react';
+import Loader from '../Loader';
 import './Controls.css'
 
 const Controls = (props) => {
@@ -8,6 +9,7 @@ const Controls = (props) => {
             <div className="burger_controls" onClick={(e) => {
                 props.onHandleIngredientQuantity(e)
             }}>
+                {props.loading && <Loader />}
                 {props.count.map((order) => (
                     <div key={order.ingredient} className='burger_control_item'>
                         <button data-ingre={order.ingredient} data-action='remove' className='rmv_ingr'>-</button>

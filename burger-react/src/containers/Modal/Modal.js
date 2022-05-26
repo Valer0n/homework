@@ -2,8 +2,7 @@ import React from "react";
 import Modal from 'react-modal';
 import './Modal.css';
 import axios from 'axios';
-import Form from "../Form/Form";
-import { toHaveAccessibleDescription } from "@testing-library/jest-dom/dist/matchers";
+import Form from "../../components/Form/Form";
 
 
 const customStyles = {
@@ -32,12 +31,7 @@ class CustomModal extends React.Component {
             finalPrice: this.props.totalPrice,
         };
     }
-    componentDidMount = () => {
-        axios
-            .get('https://beetroot-burger-app.herokuapp.com/orders')
-            .then(response => console.log(response.data))
-            .catch(error => console.log(error));
-    }
+
 
     checkPromo = (event) => {
         event.preventDefault();

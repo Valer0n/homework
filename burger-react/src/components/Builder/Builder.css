@@ -16,24 +16,16 @@
 .burger_image {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+
     align-items: center;
 }
 
-/* .burger_image img:not(:last-child) {
-    margin-bottom: 10px;
-} */
+
 p {
     margin: 10px 0;
 }
 
-/* p {
-    width: 350px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: yellow;
-    margin-bottom: 10px;
-} */
+
 .cheese {
     width: 350px;
     height: 10px;

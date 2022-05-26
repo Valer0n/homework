@@ -4,22 +4,25 @@
     box-shadow: 0 0 20px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.header img {
+    cursor: pointer;
 }
 
 .header h2 {
     font-family: 'Monoton', cursive !important;
     color: wheat;
-    font-size: 30px;
+    font-size: 40px;
+    padding-bottom: 0px;
+    margin-left: 150px;
 }
 
-.btn-orderlist {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: #21D4FD;
-    cursor: pointer;
+.header__menu li:not(:last-child) {
+    margin-right: 10px;
+}
+
+a:visited {
+    color: black;
 }

@@ -3,15 +3,3 @@
     justify-content: space-around;
     min-height: 85vh;
 }
-
-.success {
-    color: green;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.problem {
-    color: red;
-    font-size: 22px;
-    font-weight: bold;
-}
