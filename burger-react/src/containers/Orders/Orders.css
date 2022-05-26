@@ -1,0 +1,31 @@
+.orders-history {
+    background-color: rgba(26, 116, 122, 0.5);
+    border: 3px solid rgb(106, 17, 117);
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.orders-history span {
+    color: aliceblue;
+}
+
+.order__name {
+    font-size: 26px;
+    color: rgb(14, 11, 148);
+}
+
+.order__address {
+    font-size: 22px;
+    color: rgb(209, 189, 8);
+}
+
+.order__phone {
+    font-size: 18px;
+    color: rgb(235, 58, 14);
+}
+
+.order__price {
+    font-size: 22px;
+    color: rgb(6, 221, 24);
+}

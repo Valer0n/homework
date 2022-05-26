@@ -1,0 +1,28 @@
+.header {
+    min-height: 10vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    cursor: pointer;
+}
+
+.header h2 {
+    font-family: 'Monoton', cursive !important;
+    color: wheat;
+    font-size: 40px;
+    padding-bottom: 0px;
+    margin-left: 150px;
+}
+
+.header__menu li:not(:last-child) {
+    margin-right: 10px;
+}
+
+a:visited {
+    color: black;
+}
